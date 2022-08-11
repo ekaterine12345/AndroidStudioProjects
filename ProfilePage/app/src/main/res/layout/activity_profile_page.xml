@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePageActivity">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/coverImageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop">
+        </ImageView>
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:visibility="gone"
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+                android:textStyle="italic"
+                android:text="Name: ">
+            </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/nameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:lines="1"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:hint="Enter your name">
+
+            </androidx.appcompat.widget.AppCompatEditText>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+               android:visibility="gone"
+               android:id="@+id/lastnameTextView"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:textSize="30sp"
+               android:textStyle="italic"
+               android:text="Lastname: ">
+
+           </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+
+           <androidx.appcompat.widget.AppCompatEditText
+               android:id="@+id/lastnameEditText"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:singleLine="true"
+               android:lines="1"
+               android:textStyle="bold"
+               android:textSize="25sp"
+               android:hint="Enter your lastname">
+
+           </androidx.appcompat.widget.AppCompatEditText>
+
+       </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="     Other information about user:">
+        </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:visibility="gone"
+            android:id="@+id/ageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:text="Age: ">
+        </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ageEditText"
+                android:paddingStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:lines="1"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:hint="Enter your age">
+            </androidx.appcompat.widget.AppCompatEditText>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:visibility="gone"
+                android:id="@+id/phoneTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                android:text="Phone number: ">
+            </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/phoneEditText"
+                    android:paddingStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:hint="Enter your phone number">
+                </androidx.appcompat.widget.AppCompatEditText>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:visibility="gone"
+                android:id="@+id/genderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+                android:textStyle="italic"
+                android:text="Gender: ">
+            </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/genderEditText"
+                android:paddingStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:lines="1"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:hint="Enter your gender">
+            </androidx.appcompat.widget.AppCompatEditText>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:visibility="gone"
+                android:id="@+id/bornTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+                android:textStyle="italic"
+                android:text="Born date: ">
+
+            </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/bornEditText"
+                android:paddingStart="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:lines="1"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:hint="Enter your born date">
+            </androidx.appcompat.widget.AppCompatEditText>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/doneButton"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_purple"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="35sp"
+            android:text="Done">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.core.widget.NestedScrollView>
